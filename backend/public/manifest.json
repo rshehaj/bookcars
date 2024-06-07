@@ -1,0 +1,12 @@
+{
+  "short_name": "FlexRent",
+  "name": "FlexRent",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone"
+}
