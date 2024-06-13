@@ -277,43 +277,6 @@ const Header = ({
       <div style={classes.grow} className="header">
         <AppBar position="fixed" sx={{ bgcolor: '#f37022' }}>
           <Toolbar className="toolbar">
-            {isLoaded && !loading && (
-              <IconButton edge="start" sx={classes.menuButton} color="inherit" aria-label="open drawer" onClick={handleSideMenuOpen}>
-                <MenuIcon />
-              </IconButton>
-            )}
-            <Drawer open={isSideMenuOpen} onClose={handleSideMenuClose}>
-              <List sx={classes.list}>
-                <ListItemLink href="/">
-                  <ListItemIcon><HomeIcon /></ListItemIcon>
-                  <ListItemText primary={strings.HOME} />
-                </ListItemLink>
-                {isSignedIn && (
-                  <ListItemLink href="/bookings">
-                    <ListItemIcon><BookingsIcon /></ListItemIcon>
-                    <ListItemText primary={strings.BOOKINGS} />
-                  </ListItemLink>
-                )}
-                <ListItemLink href="/about">
-                  <ListItemIcon><AboutIcon /></ListItemIcon>
-                  <ListItemText primary={strings.ABOUT} />
-                </ListItemLink>
-                <ListItemLink href="/tos">
-                  <ListItemIcon><TosIcon /></ListItemIcon>
-                  <ListItemText primary={strings.TOS} />
-                </ListItemLink>
-                <ListItemLink href="/contact">
-                  <ListItemIcon><MailIcon /></ListItemIcon>
-                  <ListItemText primary={strings.CONTACT} />
-                </ListItemLink>
-                {env.isMobile() && !hideSignin && !isSignedIn && isLoaded && !loading && (
-                  <ListItemLink href="/sign-in">
-                    <ListItemIcon><LoginIcon /></ListItemIcon>
-                    <ListItemText primary={strings.SIGN_IN} />
-                  </ListItemLink>
-                )}
-              </List>
-            </Drawer>
             <div style={classes.grow} />
             <div className="header-desktop">
               {isSignedIn && (
