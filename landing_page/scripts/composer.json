@@ -1,0 +1,7 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^7.8",
+        "getbrevo/brevo-php": "1.x.x",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
