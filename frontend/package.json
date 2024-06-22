@@ -32,7 +32,8 @@
   },
   "scripts": {
     "start": "cp .env.development .env && tsc --build --verbose && craco start",
-    "build": "cp .env.staging .env && tsc --build --verbose && craco build",
+    "build": "cp .env.staging .env && tsc --build --verbose && craco build && cp -R scripts/ build/",
+    "build-dev": "cp .env.development .env && tsc --build --verbose && craco build && cp -R scripts/ build/",
     "test": "tsc --build --verbose && craco test",
     "eject": "craco eject",
     "lint": "eslint --ext .ts,.tsx .",

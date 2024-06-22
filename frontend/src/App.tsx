@@ -8,6 +8,7 @@ const Activate = lazy(() => import('./pages/Activate'))
 const ForgotPassword = lazy(() => import('./pages/ForgotPassword'))
 const ResetPassword = lazy(() => import('./pages/ResetPassword'))
 const Home = lazy(() => import('./pages/Home'))
+const Index = lazy(() => import('./pages/Index'))
 const Search = lazy(() => import('./pages/Search'))
 const Checkout = lazy(() => import('./pages/Checkout'))
 const CheckoutSession = lazy(() => import('./pages/CheckoutSession'))
@@ -32,7 +33,8 @@ const App = () => (
             <Route path="/activate" element={<Activate />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/reset-password" element={<ResetPassword />} />
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Index />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/search" element={<Search />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/checkout-session/:sessionId" element={<CheckoutSession />} />

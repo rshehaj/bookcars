@@ -55,10 +55,10 @@ const SignIn = () => {
             if (from === 'checkout') {
               navigate(`/checkout${window.location.search}`)
             } else {
-              navigate('/')
+              navigate('/home')
             }
           } else {
-            navigate('/')
+            navigate('/home')
           }
         }
       } else {
